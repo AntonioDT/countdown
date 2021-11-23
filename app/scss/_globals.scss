@@ -1,0 +1,30 @@
+@import "variables";
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Red Hat Text', sans-serif;
+    background: $very-dark-black-blue;
+    font-size: 14px;
+    //background: linear-gradient(180deg, $very-dark-black-blue 0%, $very-dark-blue 40%);
+}
+
+.flex {
+    display: flex;
+    &-between {
+        justify-content: space-between;
+    }
+    &-center {
+        justify-content: center;
+    }
+}
